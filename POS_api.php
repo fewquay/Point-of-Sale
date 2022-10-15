@@ -59,7 +59,7 @@
      
       if (isset($memcache)) {
         $currentCart = $memcache->get($_GET['token']);
-        $memcache->set($token,$currentCart.$product);
+        $memcache->set($_GET['token'],$currentCart.$product);
       } 
       $response = array('product' => $product);   
       echo json_encode( $response );
