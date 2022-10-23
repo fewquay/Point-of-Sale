@@ -2,7 +2,7 @@
 
 class POS_Client {
   private $token;
-  private $base_uri = 'http://127.0.0.1/POS_api';
+  private $base_uri = 'http://44.212.7.198/POS_api.php';
   public $terminal;
   
   public function init() {
